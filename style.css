@@ -1,0 +1,169 @@
+
+/* Style the header */
+.header {
+  padding: 150px 150px;
+  color: #ffffff;
+  font-size: x-large;
+  background-image: url(img/fondhead.png);
+  background-position:right top;
+  background-repeat: no-repeat, repeat-y;
+}
+
+/* Page content */
+.content {
+  padding: 150px;
+  color: #ffffff;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+body{
+  color: rgb(255, 255, 255);
+  margin: 0;
+  background-image:url(img/fond.png);
+  background-position:right top;
+  background-attachment: fixed, scroll;
+  background-repeat: no-repeat, repeat-y;
+
+  font-family: 'CourrierNew', sans-serif;
+  font-size: large;
+}
+
+#header{
+  height: 150px;
+  line-height:150px;
+}
+
+#header-title{
+  display: block;
+  float: left;
+
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#header-nav{
+  display: block;
+  float: right;
+  margin-top: 50px;
+  color: #ffffff;
+}
+
+#header-nav li{
+  display: inline;
+  padding-left: 20px;
+  padding-top: 200px;
+  color: #ffffff;
+}
+
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#header a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+#header a:hover{
+  color: rgb(255, 255, 255);
+}
+
+.column{
+  min-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#footer h4{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+#footer p{
+  color: white;
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none
+}
+
+a:hover{
+  color: #ff0000
+}
+
+.post{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.post-author img{
+  width: 200px;
+  height: 200px;
+  vertical-align: middle;
+}
+
+.post-author span{
+  margin-left: 16px;
+  font-size: 25px;
+}
+
+.post-date{
+  color: rgb(255, 255, 255);
+
+  font-size: 13px;
+  font-weight: bold;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+h3{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h4{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+h1, h2, h3, h4{
+  color: rgb(255, 255, 255)
+}
+
+p{
+  line-height: 1.5;
+}
+
+.post , .about{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.post-author img, .about-author img{
+  border-radius: 50%;
+}
+
+.post-container:nth-child(even){
+  background-color: #f2f2f2;
+}

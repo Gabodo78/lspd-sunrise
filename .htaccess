@@ -1,6 +1,6 @@
 <Files /index.html>
 AuthName "Accès Protégée"
 AuthType Basic
-AuthUserFile /main/.htpasswd
+AuthUserFile /.htpasswd
 Require valid-user
 </Files>
